@@ -1,0 +1,301 @@
+@font-face {
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    font-weight: bold;
+}
+
+:root {
+    --grey-color: #5e677b;
+    --accent-color: #8E2424;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.02rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.all {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    padding-top: 0.5vh;
+    padding-bottom: 2vh;
+}
+
+.navbar-logo {
+    height: 2rem;
+}
+
+.nav-buttons {
+    display: flex;
+    position: relative;
+    right: 10%;
+}
+
+.nav-buttons li a {
+    font-weight: 600;
+    color: var(--grey-color);
+}
+
+.login-buttons {
+    display: flex;
+}
+
+.login-buttons li:nth-child(1) a {
+    font-weight: 600;
+    color: rgb(122, 122, 122);
+}
+
+.login-buttons li:nth-child(2) a {
+    background-color: var(--accent-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+.nav-buttons li,
+.login-buttons li {
+    margin: 0 1rem;
+}
+
+.about-us {
+    margin: 10vh auto !important;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+
+.about-us * {
+    margin: 2.3rem 0;
+}
+
+.accent-text {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.big-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.about-us-text {
+    color: var(--grey-color);
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.metrics-wrapper {
+    display: flex;
+    height: 25vh;
+}
+
+.metrics-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 22vw;
+    margin: 2rem;
+}
+
+.metrics-title {
+    color: var(--accent-color);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.metrics-subtitle {
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.metrics-description {
+    line-height: 1.5rem;
+}
+
+.looking-for-talents-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    height: 100vh;
+}
+
+.looking-for-talents-wrapper * {
+    padding-top: 2rem;
+}
+
+.LFT-accent-span {
+    color: #a30000;
+    width: fit-content;
+    padding: 0.5rem;
+    background-color: #ece1e1;
+    border-radius: 3rem;
+    margin: 0 auto;
+}
+
+.smaller-title {
+    font-size: 2.5rem;
+    font-weight: 550;
+}
+
+.LFT-description {
+    color: var(--grey-color);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.looking-for-talents-wrapper img {
+    padding-bottom: 1rem;
+}
+
+.jobs-wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.job-category {
+    margin-top: 10vh;
+    padding-left: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1.6px;
+    text-underline-offset: 2px;
+}
+
+.job-card {
+    border: #e4e4e4 solid 1px;
+    border-radius: 1rem;
+    padding: 1.8rem;
+    margin: 1.5rem 0;
+}
+
+.job-name {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.job-time {
+    margin-right: 2rem;
+}
+
+.job-time,
+.job-salary {
+    color: var(--grey-color);
+    font-size: 1.05rem;
+}
+
+.testimonial-wrapper {
+    margin: 10vh 0;
+    height: 35vh;
+    background-color: #fff8f8;
+    text-align: center;
+    border-radius: 2rem;
+    max-width: 100%;
+    padding: 4% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.testimonial-accent-span {
+    color: #a30000;
+    font-weight: 600;
+}
+
+.testimonial-wrapper .smaller-title {
+    font-size: 1.9rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-wrapper img {
+    height: 4rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonial-name {
+    display: block;
+    font-weight: 600;
+}
+
+.testimonial-position {
+    display: block;
+    color: var(--grey-color);
+}
+
+footer {
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+.footer-wrapper {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 0;
+}
+
+.footer-wrapper * {
+    margin: 0.8rem;
+
+}
+
+.footer-wrapper input {
+    border-style: none;
+    border: 1px solid var(--grey-color);
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 20vw;
+    padding-left: 1rem;
+}
+
+.notify-me-wrapper {
+    display: flex;
+}
+
+.footer-wrapper button {
+    background-color: var(--accent-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    border-style: none;
+}
+
+.footer-wrapper button,
+.footer-wrapper input {
+    font-size: 1rem;
+}
+
+.copyright {
+    color: var(--grey-color);
+}

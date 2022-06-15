@@ -1,0 +1,60 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    padding-top: 0.5vh;
+    padding-bottom: 2vh;
+}
+
+.navbar-logo {
+    height: 2rem;
+}
+
+.nav-buttons {
+    display: flex;
+    position: relative;
+    right: 10%;
+}
+
+.nav-buttons li a {
+    font-weight: 600;
+    color: rgb(122, 122, 122);
+}
+
+.login-buttons {
+    display: flex;
+}
+
+.login-buttons li:nth-child(1) a {
+    font-weight: 600;
+    color: rgb(122, 122, 122);
+}
+
+.login-buttons li:nth-child(2) a {
+    background-color: rgb(145, 39, 39);
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.nav-buttons li,
+.login-buttons li {
+    margin: 0 1rem;
+}

@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    font-weight: bold;
+}
+
+:root {
+    --grey-color: #667085;
+    --accent-color: #8E2424;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.02rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.all {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    padding-top: 0.5vh;
+    padding-bottom: 2vh;
+}
+
+.navbar-logo {
+    height: 2rem;
+}
+
+.nav-buttons {
+    display: flex;
+    position: relative;
+    right: 10%;
+}
+
+.nav-buttons li a {
+    font-weight: 600;
+    color: var(--grey-color);
+}
+
+.login-buttons {
+    display: flex;
+}
+
+.login-buttons li:nth-child(1) a {
+    font-weight: 600;
+    color: rgb(122, 122, 122);
+}
+
+.login-buttons li:nth-child(2) a {
+    background-color: var(--accent-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+.nav-buttons li,
+.login-buttons li {
+    margin: 0 1rem;
+}
+
+.about-us {
+    margin: 10vh auto !important;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+
+.about-us * {
+    margin: 2.3rem 0;
+}
+
+.accent-text {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.big-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.about-us-text {
+    color: var(--grey-color);
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.metrics-wrapper {
+    display: flex;
+    height: 25vh;
+}
+
+.metrics-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 22vw;
+    margin: 2rem;
+}
+
+.metrics-title {
+    color:  var(--accent-color);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.metrics-subtitle {
+    padding: 1rem  0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.metrics-description {
+    line-height: 1.5rem;
+}
